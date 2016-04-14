@@ -17,5 +17,5 @@ Directory structure used during development was:
 
 
 ### Video Demonstration
-For a video demonstration of the project, please visit this [link](https://github.com/loganayaki2306/addressbook/edit/master/README.md).
+For a video demonstration of the project, please visit this [link](https://github.com/loganayaki2306/addressbook/blob/master/README.md).
 
