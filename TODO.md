@@ -1,5 +1,5 @@
 
-*DONE*
+*DONE*  
 Fix the deleteContact(Contact::ContactI id) implemenation for DummyDataSource.It's using the passed
 in id parameter as an iterator offset into the recordList vector.  This won't work correctly if a
 Contact has been deleted (i.e. the ids are no longer contiguous).  A contact's id does not 
@@ -8,11 +8,11 @@ entered and these aren't reassigned when an item is deleted the deleteContact() 
 first search for theContact with the given Id, figure out it's position in the vector and then 
 delete it.
 
-*DONE*
+*DONE*  
 Add a getContact(Contact::ContactId) method to the DataSource interface
 
 
-*DONE*
+*DONE*  
 Build working UI prototype, don't get bogged down in small stylistic details right now 
 (i.e. sizeHint())  
     -Add 'Add Contact' functionality to UI  
@@ -21,22 +21,22 @@ Build working UI prototype, don't get bogged down in small stylistic details rig
 Move all error strings into a centralized location to avoid having to update them manually if
 they need to be changed
 
-*FEATURE CUT*
+*FEATURE CUT*  
 Decide on what kind of searching features will be supported & design the system for searching  
     -Return one match (or none if no exact match), or allow multiple returned matches  
         -If multiple returned matches, how will the user page through them?  
 
-    -Support wildcard searching?  
+    -Support wildcard searching?    
 
     -Support logical operators?  
 
-*DONE*
+*DONE*  
 Changing selected contact in ContactList widget using the keyboard does not update the
 ContactDetail form.  I'm using the wrong Qt signal, the clicked() one rather than the itemChanged()
 one.
 
-*DONE*
+*DONE*  
 Set the ContactList widget's selected item to the 1st item in the list when it's constructed.
 
-*DONE - ERROR HANDLING WORKS, BUT ISN'T ELEGANT*
+*DONE - ERROR HANDLING WORKS, BUT ISN'T ELEGANT*  
 Re structure all error handling to work with new MVC architecture.
